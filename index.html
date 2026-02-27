@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yonasol — AI-Powered Tools for Small Business</title>
+  <meta name="description" content="Yonasol is a solo-founded venture studio building intelligent software for small businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">YONASOL</span><span class="logo-cursor">_</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>AI Venture Studio</span>
+      </div>
+      <h1 class="hero-title">
+        We Build AI-Powered<br>Tools That <span class="text-gradient">Work</span>
+      </h1>
+      <p class="hero-subtitle">Yonasol is a solo-founded venture studio building intelligent software for small businesses.</p>
+      
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title">yonasol — bash</span>
+        </div>
+        <div class="terminal-body">
+          <div id="terminalOutput" class="terminal-output"></div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span>
+            <span id="terminalCursor" class="terminal-cursor">_</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#products" class="cta-button">
+        <span>Explore Our Products</span>
+        <i class="fas fa-arrow-down"></i>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-label animate-in">// about</div>
+      <h2 class="section-title animate-in">The Mission</h2>
+      <p class="about-text animate-in">
+        Yonasol is an AI venture studio founded by a product leader with 15+ years in enterprise software. 
+        We identify painful problems for small businesses, then build focused AI tools that solve them — fast. 
+        Each product is designed to run lean, scale independently, and deliver real value from day one.
+      </p>
+
+      <div class="stats-row">
+        <div class="stat-item animate-in">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Products Built</div>
+          <div class="stat-glow"></div>
+        </div>
+        <div class="stat-item animate-in">
+          <div class="stat-value">4</div>
+          <div class="stat-label">Industries Served</div>
+          <div class="stat-glow"></div>
+        </div>
+        <div class="stat-item animate-in">
+          <div class="stat-value">2025</div>
+          <div class="stat-label">Founded</div>
+          <div class="stat-glow"></div>
+        </div>
+        <div class="stat-item animate-in">
+          <div class="stat-value">AI + 1</div>
+          <div class="stat-label">Powered by: AI + One Human</div>
+          <div class="stat-glow"></div>
+        </div>
+      </div>
+
+      <div class="philosophy-cards">
+        <div class="philosophy-card animate-in">
+          <div class="card-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Ship Fast</h3>
+          <p>From idea to deployed product in weeks, not months.</p>
+        </div>
+        <div class="philosophy-card animate-in">
+          <div class="card-icon">
+            <i class="fas fa-feather-pointed"></i>
+          </div>
+          <h3>Stay Lean</h3>
+          <p>Every product runs profitably with minimal overhead.</p>
+        </div>
+        <div class="philosophy-card animate-in">
+          <div class="card-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Solve Real Problems</h3>
+          <p>We build for revenue, not vanity metrics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section products-section">
+    <div class="container">
+      <div class="section-label animate-in">// products</div>
+      <h2 class="section-title animate-in">The Portfolio</h2>
+
+      <div class="products-grid">
+        <div class="product-card animate-in" data-tilt>
+          <div class="product-header">
+            <div class="product-version">v1.2.0</div>
+            <span class="product-status status-development">In Development</span>
+          </div>
+          <h3 class="product-name">ReplyLead</h3>
+          <p class="product-desc">AI-powered lead response tool. Respond to leads in seconds, not hours.</p>
+          <div class="product-tech">Next.js • Supabase • GPT-4</div>
+          <a href="https://replylead.ai" target="_blank" rel="noopener noreferrer" class="product-link">
+            replylead.ai <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="product-card animate-in" data-tilt>
+          <div class="product-header">
+            <div class="product-version">v0.8.1</div>
+            <span class="product-status status-beta">Beta</span>
+          </div>
+          <h3 class="product-name">EverConvert</h3>
+          <p class="product-desc">Smart note-taking that converts conversations into actionable insights.</p>
+          <div class="product-tech">React • Whisper API • Claude</div>
+          <a href="#" class="product-link">
+            Coming Soon <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="product-card animate-in" data-tilt>
+          <div class="product-header">
+            <div class="product-version">v0.3.2</div>
+            <span class="product-status status-alpha">Alpha</span>
+          </div>
+          <h3 class="product-name">DinnerFlow</h3>
+          <p class="product-desc">AI meal planning for busy families. Weekly menus in 60 seconds.</p>
+          <div class="product-tech">Next.js • OpenAI • Stripe</div>
+          <a href="https://dinnerflow.com" target="_blank" rel="noopener noreferrer" class="product-link">
+            dinnerflow.com <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="coming-soon-row animate-in">
+        <div class="coming-soon-card">
+          <div class="coming-soon-icon">?</div>
+          <span>Stealth Mode</span>
+        </div>
+        <div class="coming-soon-card">
+          <div class="coming-soon-icon">?</div>
+          <span>Stealth Mode</span>
+        </div>
+        <div class="coming-soon-plus">
+          <span>+ More brewing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="section blog-section">
+    <div class="container">
+      <div class="section-label animate-in">// blog</div>
+      <h2 class="section-title animate-in">From the Terminal</h2>
+
+      <div class="blog-grid">
+        <div class="blog-card animate-in">
+          <div class="blog-terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="blog-filename">billion-dollar-solo.md</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">Feb 2026</div>
+            <h3 class="blog-title">Why I'm Building a Billion-Dollar Company Solo</h3>
+            <p class="blog-excerpt">The playbook for leveraging AI to build at scale without a team of hundreds. One founder. One vision. Infinite leverage.</p>
+            <span class="blog-read-more">cat article.md →</span>
+          </div>
+        </div>
+
+        <div class="blog-card animate-in">
+          <div class="blog-terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="blog-filename">micro-saas-playbook.md</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">Feb 2026</div>
+            <h3 class="blog-title">The Micro-SaaS Playbook: Ship, Measure, Iterate</h3>
+            <p class="blog-excerpt">How to go from zero to paying customers in 30 days. Build small, validate fast, and compound your way to freedom.</p>
+            <span class="blog-read-more">cat article.md →</span>
+          </div>
+        </div>
+
+        <div class="blog-card animate-in">
+          <div class="blog-terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="blog-filename">ai-tools-smb.md</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">Jan 2026</div>
+            <h3 class="blog-title">AI Tools That Actually Help Small Businesses</h3>
+            <p class="blog-excerpt">Most AI tools are built for enterprise. We're building for the 33 million small businesses that power the economy.</p>
+            <span class="blog-read-more">cat article.md →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-label animate-in">// contact</div>
+      <h2 class="section-title animate-in">Let's Connect</h2>
+
+      <div class="contact-wrapper">
+        <div class="contact-form-container animate-in">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <span class="submit-text">Send Message</span>
+              <span class="submit-sending" style="display:none;">Sending...</span>
+              <span class="submit-sent" style="display:none;">✓ Sent!</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-info animate-in">
+          <div class="contact-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:hello@yonasol.com">hello@yonasol.com</a>
+          </div>
+          <div class="contact-socials">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="contact-location">
+            <i class="fas fa-map-pin"></i>
+            <span>Greenville, SC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">YONASOL<span class="logo-cursor">_</span></span>
+          <p class="footer-tagline">Powered by caffeine and curiosity.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Yonasol LLC. Built with AI.</span>
+        <span class="footer-location">Greenville, SC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
